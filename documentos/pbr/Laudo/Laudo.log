@@ -1,0 +1,13 @@
+This is TeX, Version 3.14159265 (MiKTeX 2.9) (preloaded format=tex 2016.4.5)  5 APR 2016 02:03
+**laudo.tex
+(laudo.tex
+! Undefined control sequence.
+l.1 \documentclass
+                  [12pt,a4paper,final]{report}
+? 
+! Emergency stop.
+l.1 \documentclass
+                  [12pt,a4paper,final]{report}
+End of file on the terminal!
+
+No pages of output.
