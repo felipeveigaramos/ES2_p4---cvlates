@@ -87,6 +87,7 @@ Ano do artigo).
 1.0- O usuário loga no sistema
 2.0- O usuário acessa a página de dados de documentos
 3.0- O usuário insere os dados de entrada nos respectivos campos reservados.
+3.1- É aberta ao usuário a possibilidade de inserir links que remetem a seus trabalho acadêmicos (artigos em links como ieee, por exemplo).
 4.0- O usuário precisa confirmar os dados para que sejam salvos no banco.
 4.1- Se o usuário cancelar a operação, os dados são perdidos.
 4.2- Se o usuário confirmar a operação, os dados são salvos no banco. Uma mensagem de confirmação será plotada na tela. E caso de algum erro na
@@ -104,6 +105,9 @@ Entrada: Campo a ser alterado.
 
 1.0- O usuário deve estar logado no sistema
 2.0- O usuário acessa sua página, no sistema, e solicita a página de dados acadêmicos que contém seus dados e documentos inseridos.
+2.1- O usuário acessará a página de dados cadastrais (email,cpf e senha) para alteração de dados cadastrais.
+2.1.2- O usuário será obrigado a digitar sua senha anterior para alteração de senha.
+2.2- Para alteração de dados acadêmicos haverá uma página separada - evita-se aqui a mistura de conjunto de dados semanticamente distintos.
 3.0- O usuário realiza as alterações e entra na etapa de confirmação de alterações.
 3.1- O usuário pode cancelar as alterações e o banco de dados permance inalterado.
 3.2- O usuário confirma as alterações - estas que por sua vez passam pelo processo de validação.
@@ -119,10 +123,11 @@ do usuário(confirmar alteração de dados?). Da mesma forma, erros devem ser repor
 bom funcionamento ao usuário.
 
 Caso de uso 7 - Excluir Documentos.
-Atores: Moderador, Sistema
+Atores: Moderador,Usuário, Sistema
 Entrada: Título do documento
 
-1.0- O Moderador executará uma busca por título de documento.
+1.0- O Moderador executará uma busca por título de documento(excusão da referencia do link de trabalho acadêmico).
+1.1- O usuário logado poderá excluir suas refrências de trabalho acadêmico em sua respectiva página na plataforma.
 2.0- Caso ele encontre uma relação de documentos (uma lista de documentos no sistema) ele deverá ter uma opção de excluir.
 3.0- O moderador exclui o documento mediante a uma etapa de confirmação.
 3.1- Em caso de erro, uma mensagem será reportada.
