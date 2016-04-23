@@ -1,0 +1,171 @@
+Caso de uso 1 - Efetuar cadastro On-line
+Atores: Sistema,usuário
+1.0- O usuário realiza cadastro on-line na plataforma.
+1.1- Dados para cadastro: CPF, Email e senha para entrada.
+1.2- O sistema deverá validar CPF,email e força da senha
+1.2.1- Em caso de erro na verificação, retorna ao cadastro.
+1.2.2- Em caso de sucesso - retorna mensagem de confirmação.
+
+*Descrição do caso de uso 1:
+    O caso de uso 1 é referente ao requisito funcional 1 presente na documentação.
+A etapa é um CRUD de usuário no sistema, no qual o usuário é qualquer pessoa que
+necessite utilizar a plataforma (estudante de Tecnologia, em geral). Este caso de
+uso refere-se ao cadastramento de usuários, no qual deve ser verificado a veracidade
+de elementos como CPF, email e a força mínima da senha. Além disso, deve ser verificado
+a possibilidade do usuário ser duplicado -- o que pode ser visto através de CPF.
+Assim, para os usuários as relações de senha, CPF são tidas de um para um. O sistema também
+deverá ser integro na questão de feedback -- em outras palavras: Caso uma ação esteja correta haverá confirmação e em caso de erro uma constatação do mesmo
+aparecerá.
+
+Caso de uso 2 - Cadastrar instituição de ensino
+Atores:Sistema, Instituição de Ensino
+Entrada: CNPJ, email e senha
+1.0- A instituição de ensino acessa a plataforma on-line
+1.1.0- Solicita o cadastramento da instituição
+1.1.1- O sistema retorna a tela de cadastro institucional
+1.2.0- A instituição insere seus dados: CNPJ, E-Mail e senha.
+1.2.1- Os dados CNPJ, email e força da senha passarão pela etapa de validação.
+1.2.1- Se a validação retornar erro, o sistema retornará na tela de cadastro um alerta.
+1.2.2- Se a validação não retornar erro, o sistema retornará uma mensagem de confirmação.
+
+*Descrição do caso de uso 2:
+    O caso de uso 2 é referente ao requisito funcional 2 presente na documentação.
+A etapa é um CRUD de usuário no sistema, no qual o usuário é qualquer instituição de ensino
+que necessite realizar o cadastramento na plataforma. Para a realização de cadastro, a instituição utilizará email, CNPJ e senha como entrada do processo.
+O sistema por sua vez, verificará tais dados garantindo suas respectivas corretudes e suas aparências únicas no sistema -- em outras palavras, para cada instituição
+presente no sistema haverá um único CNPJ e email (relação uma para um). Em caso de sucesso no cadastro, o sistema retornará feedback positivo. Caso contrário,
+o sistema retornará o respectivo erro.
+
+Caso de uso 3 - Alterar cadastro de usuário
+Atores:Usuário,sistema
+0.1- O usuário loga no sistema
+0.1.1- Em caso de sucesso, o usuário acessará o sistema
+0.1.2- Em caso de falha, o sistema permanecerá na HomePage e apresentará alerta para dados incompatíveis.
+1.0- O usuário solicita alteração de dados
+1.1- O sistema retorna a tela com dados cadastrais.
+1.2- Os campos na tela de edição de dados estarão disponíveis para alterações.
+1.2.2- O usuário poderá alterar qualquer um dos campos disponíveis na tela.
+1.3.1- O usuário confirma a alteração, em caso de sucesso na atualização do banco de dados o sistema retorna uma mensagem como feedback positivo do processo.
+1.2.1- Caso ocorra alguma falha durante o processo de alteração de dados cadastrados, o sistema reportará o erro correspondente e os dados se manterão como eram
+anteriormente. Em persistências de falhas decorrentes do sistema, este deverá sugerir ao usuário acessar o sistema mais tarde.
+
+*Descrição do caso de uso 3:
+    O caso de uso 3 é referente ao requisito funcional 3 presente na documentação.
+A etapa é um CRUD de usuário no sistema, no qual o usuário deverá logar para ter acesso ao sistema. Após logar ele solicitará o acesso a tela de dados, a qual
+deverá conter dados sobre sua vida acadêmica -- grau de instrução, instituições a qual pertenceu e demais dados [previstos nas referências como os presentes
+no Lattes do Governo Federal]. Após as alterações desejadas, o usuário deverá confirmar sua intenção de alteração. Caso não ocorra nenhum erro por parte
+do usuário [um dos dados inseridos -- que serão todos validados] e nem por parte do sistema, uma mensagem
+de feedback positivo será retornado na tela. Caso contrário, o erro deverá ser reportado. Assim, os dados deverão ser mostrados como eram anteriormente ao processo
+de mudança. Em caso de sucessivos erros [por parte do sistema], o usuário deverá ser orientado a voltar mais tarde à plataforma.
+
+Caso de uso 4 - Excluir cadastro de usuário
+Atores: Moderador, Sistema
+1.0- O moderador do site confere o cadastro de um usuário.
+1.1- Se encontrar o usuário, o sistema retorna o cadastro do mesmo.
+1.2- Caso não encontrar o usuário, o sistema retorna uma mensagem de aviso -- "usuário não encontrado"
+[Caso tenha sucesso na consulta]
+2.0- O moderador solicita a exclusão do usuário no sistema.
+2.1- O sistema pede uma confirmação do moderador na ação de exclusão de usuário
+2.2- Se o moderador não confirmar a ação, o sistema voltará para página de consultas do moderador.
+2.3- Se o moderador confirmar: A exclusão é efetuada e uma mensagem de feedback retornada
+2.4- Em caso de erro da última etapa: o sistema volta uma mensagem de erro e retorna para página de consultas do moderador.
+
+*Descrição do caso de uso 4
+    O caso de uso 4 trata-se de uma operação de CRUD operada pelo moderador da plataforma no sistema. O moderador realiza consulta de usuários através de CPF
+ou email e realiza suas possíveis exclusões no sistema. É necessário ressaltar que a presença de feedback nas ações, bem como, a exigência de confirmação
+de ações por parte do sistema ao moderador é altamente importante. Isto pois toda ação deve ser certificada de que ocorreu com integridade.
+
+Caso de uso 5 - Inserir Documentos.
+Ator: usuário,Sistema
+Entrada: Informações Pessoais (Nome, Endereço Profissional, Endereço Pessoal)University Degrees (Nível de graduação, Ano de Graduação, Título da
+Monografia/Artigo, Palavra-Chave da Monografia/Artigo, Área de Monografia/Artigo,
+Orientador da Monografia/Artigo); Proficiência de Idioma (Idioma, Habilidade (reading,
+writing, speaking, comprehension), Nível de Habilidade (Bom, Razoável, Baixo);
+Produção Bibliográfica (Título do Artigo, Palavras-Chave do Artigo, Idioma do artigo,
+Ano do artigo).
+
+1.0- O usuário loga no sistema
+2.0- O usuário acessa a página de dados de documentos
+3.0- O usuário insere os dados de entrada nos respectivos campos reservados.
+4.0- O usuário precisa confirmar os dados para que sejam salvos no banco.
+4.1- Se o usuário cancelar a operação, os dados são perdidos.
+4.2- Se o usuário confirmar a operação, os dados são salvos no banco. Uma mensagem de confirmação será plotada na tela. E caso de algum erro na
+operação (seja por validação de dados ou erros do sistema) ocorra, este deverá ser reportado via mensagens na tela.
+
+*Descrição de Caso de Uso 5
+
+    Este caso de uso é referente a um CRUD, o qual tem a função de inserir dados acadêmicos a cerca do usuário. Para questões de interface, o Lattes pode ser
+utilizado como uma referência -- dado que é uma plataforma de uso consolidado. Todas as operações de alteração de banco aqui presentes devem reportar mensagens
+ao usuário. Além disto, antes de qualquer operação que altere o banco de dados, o usuário confirmará cada ação tomada. Ainda neste caso de uso, é importante
+salientar que os dados inseridos deverão estar coerentes ao máximo com a realidade -- os dados sofrerão testes de validação.
+
+Caso de uso 6 - Alterar Documentos.
+Ator: Usuário, Sistema
+Entrada: Campo a ser alterado.
+
+1.0- O usuário deve estar logado no sistema
+2.0- O usuário acessa sua página, no sistema, e solicita a página de dados acadêmicos que contém seus dados e documentos inseridos.
+3.0- O usuário realiza as alterações e entra na etapa de confirmação de alterações.
+3.1- O usuário pode cancelar as alterações e o banco de dados permance inalterado.
+3.2- O usuário confirma as alterações - estas que por sua vez passam pelo processo de validação.
+3.2.1- Os dados são validados e podem ser recusados. Isso reportará ao usuário uma mensagem de identificação de erro.
+3.2.2- Os dados são validados e são aceitos. Isso reportará ao usuário um feedback positivo. A alteração termina aqui e o usuário volta a sua página inicial.
+4.0- Uma mensagem confirmando a alteração deve ser emitida na tela.
+
+*Descrição de Caso de Uso 6
+    Este Caso de uso é referente a uma operação de CRUD, o qual tem a função de alterar um conjunto de dados referente a um usuário no sistema. Tal ação
+terá como ator o próprio usuário e implicará modificações no banco de dados do sistema. Toda alteração de dados deverá passar por um processo mínimo
+de validação de dados(verificação de coerência).Além disso, qualquer etapa que implica em modificação na base de dados deve anteceder a uma pré confirmação
+do usuário(confirmar alteração de dados?). Da mesma forma, erros devem ser reportados em tempo real. Isso é importante para manter a coerência da visão do
+bom funcionamento ao usuário.
+
+Caso de uso 7 - Excluir Documentos.
+Atores: Moderador, Sistema
+Entrada: Título do documento
+
+1.0- O Moderador executará uma busca por título de documento.
+2.0- Caso ele encontre uma relação de documentos (uma lista de documentos no sistema) ele deverá ter uma opção de excluir.
+3.0- O moderador exclui o documento mediante a uma etapa de confirmação.
+3.1- Em caso de erro, uma mensagem será reportada.
+3.2- Em caso de sucesso, uma mensagem será reportada.
+
+*Descrição de Caso de Uso 7
+    Este caso de uso 7 é referente a uma operação de CRUD realizada pelo moderador no sistema. O moderador, com seu respectivo acesso terá a possibilidade de
+consultar documentos a partir de seus títulos e realizar exclusões. Toda etapa de modificação de banco de dados deverá ser antecedida por uma confirmação
+e seguida por uma mensagem de confirmação. Em casos de erro, o mesmo será especificado.
+
+Caso de uso 8 - Consultar e Resgatar Documentos.
+Atores: Usuário, Sistema
+Entrada: Campo (autor, título, palavra-chave ou local de aplicação) no qual o usuário
+deseja fazer a busca e o parâmetro de busca.
+1.0- O usuário (não necessariamente logado) poderá buscar o documento através de qualquer campo.
+1.1- Caso encontrado, uma lista de documentos será retornada.
+1.2- Caso a string de busca tenha resultado nulo: devolver mensagem de justificativa (nenhum documento encontrado)
+2.0- Em caso de encontrar documentos: Os arquivos com seus respectivos autores deverão ser listados na tela
+3.0- Um link para download do documento deverá ser disponibilizado na tela de busca de documentos -- para fazer download do arquivo desejado.
+
+*Descrição de Caso de Uso 8
+     Este caso de uso é referente a uma consulta ao acervo presente no sistema. É importante ressaltar que o autor deverá ser listado. Ao encontrar arquivos por
+meio do campo desejado, os links para download devem estar disponíveis. Além disso, caso a string de busca tenha retorno nulo um erro será reportado.
+
+Caso de uso 9 - Gerar Relatórios
+Atores:Usuário, Sistema
+Entrada: Solicitação via Cadastro.
+
+1.0- O usuário não precisará logar
+2.0- O usuário precisará apenas estar na plataforma (visão comum -- sem precisar estar logado com senha e email)
+3.0- Se for um usuário logado, ele pode gerar um relatório contendo todos os seus dados acadêmico (em txt ou pdf).
+4.0- Se for um usuário não logado, ele poderá buscar um perfil por email, nome ou cpf e gerar um relatório contendo dados acadêmicos.
+4.1- A saída do processo será um documento. (txt ou pdf)
+
+*Descrição do Caso de Uso 9
+    O caso de uso 9 refere-se a uma operação de consulta. Para ele não é preciso ser um usuário logado, como nos demais casos. É necessário entretanto, realizar
+uma consulta (caso não logado) e uma solicitação da geração de relatório contendo dados pessoais / acadêmicos. A saída  tem que ter duas opções: pdf
+e txt -- passíveis de serem salvos em máquinas locais.
+
+--- Notas Relevantes
+
+*O moderador deverá ter acesso de moderador, painel de moderador (para consultas e alterações do sistema)
+*Haverá páginas de consulta de perfis na plataforma (destinado a usuários logados e não logados)
+*O sistema Lattes é excelente referência para elaboração de interface gráfica.
+*O sistema deve ter minimamente um conceito de acessibilidade embutido e aplicado.
