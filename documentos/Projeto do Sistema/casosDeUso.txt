@@ -93,7 +93,6 @@ Ano do artigo).
 operação (seja por validação de dados ou erros do sistema) ocorra, este deverá ser reportado via mensagens na tela.
 
 *Descrição de Caso de Uso 5
-
     Este caso de uso é referente a um CRUD, o qual tem a função de inserir dados acadêmicos a cerca do usuário. Para questões de interface, o Lattes pode ser
 utilizado como uma referência -- dado que é uma plataforma de uso consolidado. Todas as operações de alteração de banco aqui presentes devem reportar mensagens
 ao usuário. Além disto, antes de qualquer operação que altere o banco de dados, o usuário confirmará cada ação tomada. Ainda neste caso de uso, é importante
