@@ -1,0 +1,64 @@
+\documentclass[12pt,a4paper,final]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{cmap}
+\usepackage{amsmath}
+\usepackage[portuguese]{babel}
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt
+]{biblatex}
+\addbibresource{references.bib}
+\author{Luan Bodner \\ 
+        \and Felipe Veiga Ramos \\
+        \and Paulo Batista da Costa\\ 
+        \and Josimar Loch}
+\title{Modelo para o laudo de defeitos}
+
+\begin{document}
+\maketitle
+\setcounter{page}{1}
+
+\setcounter{chapter}{1}
+
+
+\section{Modelo para o laudo de defeitos}
+O modelo a seguir foi baseado no artigo \cite{ModelingBugReportQuality}, mais especificamente na seção "A MODEL OF BUG REPORT QUALITY", neste artigo os autores propõe:
+\subsection{Gravidade auto-relatada}
+Quando a apresentação de um relatório utilizando o sistema de rastreamento de Bugs Bugzilla, o usuário é solicitado para avaliar a gravidade do erro determinando um dos níveis de severidade: crítica extrema, crítica, grande, normal, menor, trivial, ou melhoria.
+Tratamos essa variável como um fator ordenada, onde crítica extrema é a mais grave e melhoria é a menos grave. Um
+problema com gravidade auto-relatada é que os usuários talvez não sigam as diretrizes que descrevem cada categoria. Pode ser
+tentador, por exemplo, para que o usuário relate o nível de um bug de forma errônea por não ter olhado com muita atenção. Para testar esta hipótese, nós também monitoramos as alterações posteriores à gravidade. A seção \ref{altlogp} descreve isso em mais detalhes.
+\subsection{Medidas de Legabilidade}
+Esse modelo incorpora várias medidas básicas de legibilidade.
+Estes incluem a fórmula Coleman-Liau, a fórmula Kincaid,
+o Índice de Legibilidade automatizado, e o índice de POLUIÇÃO ATMOSFÉRICA, todos os quais são baseados em características superficiais tais como o número médio de sílabas por palavra ou palavras por frase. Nessa hipótese é que os erros que são mais difíceis de compreender será mais difíceis de tratar e será
+abordada mais tarde. Estas medidas são aplicadas ao inicial
+relatório de bug descrição usando GNU Estilo versão 1.10-RC4.
+\subsection{Reputação do Commiter}
+Para cada relatório de bug, definimos a sua "reputação" apresentado do seguinte modo:
+
+\[Reputação =\frac{C \cap R}{C + 1}\]
+
+Onde \textit{C} é o conjunto de todos os relatórios apresentados pelos que apresentou antes do relatório de erro que está sob consideração e \textit{R} é o conjunto de todos os relatórios de bugs que foram resolvidos e ou
+marcados como a copia de um relatório resolvido. Em outras palavras, essa pontuação mede a "taxa de sucesso" do commiter antes da apresentação do relatório sob consideração.
+\label{altlogp}
+\subsection{Alterações ao Longo do Tempo}
+
+Esse modelo inclui vários recursos que são medidos após a apresentação do relatório inicial. Esses recursos incluem:
+\begin{itemize}
+\item mudanças de severidade do bug - Nessa hipótese é que os relatórios de erros com a severidade alta, podem levar mais tempo para serem corrigidos. Para testar esta hipótese, o modelo inclui o número total de escala da gravidade e de desanuviamento dentro de um conjunto de determinados períodos de tempo.
+\item Contagem de Comentários - 
+com o passar do tempo, registramos o número total de comentários que foram postados em resposta ao relatório inicial de bug. Note que, em geral, comentários podem ser enviados por qualquer pessoa. Isso significa que a contagem de comentário poderia servir como um proxy para algumas noções de popularidade.
+\end{itemize} 
+\subsection{Características Eludidas}
+Além das características acima mencionadas, que considerando as
+mudanças prioritárias do bug, da mesma forma como as mudanças de severidade. Mudanças prioritárias são anotações de contabilidade geralmente internas feito por um desenvolvedor, uma vez que o erro foi atribuído para posterior análise, mudanças prioritárias acabam sendo pouco frequentes, no entanto, o efeito destas características são  insignificantes.
+
+\medskip
+\printbibliography
+\end{document}
