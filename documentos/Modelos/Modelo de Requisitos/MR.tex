@@ -15,16 +15,22 @@
 Este documento tem o objetivo de definir um modelo claro e simples para auxiliar na criação de um documento de requisitos limpo e compreensível.
 Para cumprir esta meta, definimos o formato em que os requisitos devem ser apresentados, o contexto em que o projeto deve ser definido e a estrura em que o documento deve ser organizado.
 
-\section*{Estrutura do Documento}
+Esta seção deve mostrar uma breve explicação do projeto que deverá ser desenvolvido. Esta seção também deve explicar qual é necessidade o produto em questão e em qual contexto ele deverá ser utilizado.
 
-O documento de requisitos deve apresentar no mínimo as seguintes seções:
+\section*{Estrutura do Projeto}
 
-\begin{itemize}
-\item Introdução : Breve explicação do projeto que deverá ser desenvolvido.\\ Esta seção também deve explicar qual é necessidade o produto em questão e em qual contexto ele deverá ser utilizado.
+\subsection*{Requisitos não-funcionais}
 
-\item Requisitos não-funcionais : Descrição das ferramentas que poderão ser utilizadas caso determinadas funcionalidades sejam específicas dessas ferramentas. Além disso, o documento deve deixar clara a restrição de \textit{hardware}, ou seja, em que contexto de trabalho o produto será utilizado.
+Descrição das ferramentas que poderão ser utilizadas caso determinadas funcionalidades sejam específicas dessas ferramentas. Além disso, o documento deve deixar clara a restrição de \textit{hardware}, ou seja, em que contexto de trabalho o produto será utilizado.
+Esses requisitos devem ser enumerados e ter um identificador único, como mostrado no exemplo.
+\begin{enumerate}
+\item[RF1] Implementação feita na linguagem Ruby.
+\item[RF2] Deve ser um aplicativo Web.
+\end{enumerate}
 
-\item Requisitos funcionais: Parte principal do documento de requisitos.\\
+\subsection*{Requisitos funcionais}
+
+Parte principal do documento de requisitos.\\
 Esta seção deve cobrir uma série de requerimentos para ser considerada satisfatória.\\
 Os requerimentos estruturais do texto são:
 
@@ -48,17 +54,20 @@ Um exemplo de requisito funcional dado a seguir:
 
 Detalhes quanto às entradas e especificações dos tipos de dados devem ser feitos em uma seção separada do documento e não junto com os requisitos.\\
 
-\item Definição de dados:
+\subsection*{Definição de dados}
+
 Nesta seção, é necessário definir os atributos do projeto, os seus tipos, a definição de como as partes do sistema devem se comunicar.\\
 Um exemplo disso seria a definição dos dados necessários para a criação de uma conta no sistema, ou os dados necessários(e o tipo de cada um desses dados) para acessar o sistema e suas interfaces.
 
-\item Finalização do produto: O documento deve incluir uma visão geral do produto finalizado, seja de forma textual ou visual, para aqueles que querem verificar as necessidades do projeto sem precisar ler e compreender todos os requisitos.\\
-\end{itemize}
+\subsection*{Finalização do produto}
+
+O documento deve incluir uma visão geral do produto finalizado, seja de forma textual ou visual, para aqueles que querem verificar as necessidades do projeto sem precisar ler e compreender todos os requisitos.\\
 
 \section*{Conclusão}
 
 Obviamente, a escala do projeto vai influenciar o nível de detalhes e o tamanho do requerimentos.\\
 Independente do tamanho do projeto, é necessário seguir um modelo para que o produto desenvolvido esteja o mais próximo possível da visão do cliente e seja capaz de suprir as suas necessidades.\\
 O documento de requisitos também deve ser capaz de gerar discussões entre o cliente e o gerente do time de desenvolvimento para que as funcionalidades do sistema sejam ajustadas e melhorias sejam feitas antes do processo de desenvolvimento começar.
+Esta seção deve cobrir considerações finais sobre o projeto para poder levantar essas discussões.
 
 \end{document}
