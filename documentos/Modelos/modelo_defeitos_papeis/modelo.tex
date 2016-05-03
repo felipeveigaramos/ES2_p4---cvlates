@@ -1,0 +1,74 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage[latin1]{inputenc}
+\usepackage[portuguese]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{lmodern}
+%\usepackage{fourier}
+\usepackage{enumerate}
+\usepackage{latexsym}
+\usepackage{longtable}
+\usepackage[all]{xy}
+\usepackage{float}
+\usepackage[bookmarksnumbered,colorlinks,plainpages,backref]{hyperref}
+\usepackage{lscape}
+\usepackage{mathrsfs}
+\usepackage{fancyhdr}
+\usepackage{boxedminipage}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{bookmark}
+
+\author{Autor}
+\title{Laudo de defeitos -- papel}
+
+\begin{document}
+\maketitle
+
+\chapter{Dados de identificação}
+
+\begin{table}[!h]
+  \begin{tabular}{cccc}
+    \toprule
+    \textbf{Data da primeira versão}: & dd/mm/aaaa & \textbf{Data da versão atual}: & dd/mm/aaaa \\
+    \midrule
+    \textbf{Identificação do documento} & identificação & \textbf{Versão}: & Número da versão \\
+\midrule
+Papel PBR & nome do projeto & & \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\chapter{Lista de defeitos}
+
+\begin{enumerate}
+\item Defeito 1
+\item defeito 2
+\item defeito 3
+\end{enumerate}
+\footnote{Cada defeito deverá conter:
+\begin{itemize}
+\item Onde ele foi encontrado
+\item Descrição sucinta do defeito
+\item O que ele afeta
+\end{itemize}
+}
+
+\chapter{Tempo de trabalho}
+
+\begin{table}[!h]
+  \begin{tabular}{cccc}
+    \toprule
+\textbf{data Início} & \textbf{Hora de início} & \textbf{data fim} & \textbf{hora final}\\
+\midrule
+& & & \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+\end{document}
