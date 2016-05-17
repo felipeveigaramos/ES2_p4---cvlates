@@ -1,0 +1,12 @@
+Análise – Modelos utilizados pelo grupo 2
+
+Defeitos identificados:
+
+*Não é possível identificar quando um integrante da equipe para  de implementar uma determinada tarefa (É verificável quando o integrante commita, assim ficando a cargo da confiança no trabalho em equipe)
+
+*Não é possível saber se os integrantes devem commitar por issue ou por tarefa
+– Os defeitos residem apenas no controle de andamento de tarefas em pequeno escopo, pois em escopo mais amplo é possível controlar tarefas a partir da utilização de checklist
+
+
+Os documentos em geral são bem organizados. Podemos dizer que o modelo de documento de requisitos é excelente para identificar prioridades: requisitos imprescindíveis a desejáveis – O que auxilia na projeção de esforços de desenvolvimento.
+Outro fator importante é a forma como a qual o repositório está organizado. É notável uma estrutura hierarquizada que facilita a fácil navegação.
