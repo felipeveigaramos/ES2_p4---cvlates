@@ -1,0 +1,113 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[portuguese]{babel}
+\author{Gerente: Felipe V. Ramos}
+\title{Estimativa de Tempo de Desenvolvimento de Software -- Projeto 2}
+\begin{document}
+        \maketitle
+        \section*{Descrição do Documento}
+        \quotation
+        \quad Este documento objetiva estimar o tempo e esforço
+necessário para a implementação do CV-Lates, como descrito em documentos
+apropriados.
+
+
+        \quad Para tal, foi utilizado a técnica \textbf{EAP} (Estrutura Analítica de
+Projeto, do inglês \textit{Work breakdown structure}) e na fórmula \textbf{PERT}
+(\textit{Program Evaluation and Review Technique}). A seguir serão apresentadas as subdivisões do trabalho em etapas. Estas são baseadas na leitura feita a partir
+dos requisitos funcionais levantados através da documentação do projeto.
+
+
+        \section*{Escopo do Projeto}
+
+        \quad As estimativas seguem:
+        \begin{itemize}
+                \item Etapa 1: Diagramação de casos de uso
+                \item Etapa 2: Diagramação de classes
+                \item Etapa 3: Implementação de classes
+                \item Etapa 4: Implementação de operações de Banco de Dados
+                \item Etapa 5: Implementação de Interface gráfica
+                \item Etapa 6: Realização de testes
+                \item Etapa 7: Correções
+        \end{itemize}
+
+        \section*{Estimativa de Tempo por Etapa}
+        \textbf{Descrição:} A estimativa foi realizada utilizando o cálculo PERT definido em \cite{}. Este é tido como:
+        $TE = \frac{P + 4M + O}{6}$, onde $TE$ é o tempo esperado, $P$ é o tempo
+pessimista, $M$ o tempo mais provável e $O$ o tempo Otimista.
+
+        \quad O tempo pessimista será aquele que denotará maior intervalo de tempo. Este considera que ocasionalidades podem influenciar no baixo rendimento do
+integrante da equipe, o que torna o desenvolvimento mais lento e menos eficiente. Por sua vez, o tempo otimista propõem que o desenvolvimento será favorecido e
+os integrantes trabalharão sem interrupções e fatores que causem lentidão ou baixa produtividade.
+
+        \quad Já o tempo mais comum, contará uma estimativa que tenta se aproximar do real, de acordo com o que se sabe a respeito dos integrantes da equipe e
+o ritmo de desenvolvimento normal de cada um da equipe.
+
+        \textbf{Estimativas:}
+        \begin{itemize}
+                \item Etapa 1: Diagramação de casos de uso
+                \begin{itemize}
+                        \item Otimista: 2 horas
+                        \item Pessimista: 5 horas
+                        \item Mais provável: 3 horas
+                        \item Tempo esperado: 3,16 horas
+                \end{itemize}
+                \item Etapa 2: Diagramação de classes
+
+                \begin{itemize}
+                        \item Otimista: 1 hora
+                        \item Pessimista: 5 horas
+                        \item Mais provável:2 horas
+                        \item Tempo esperado: 2,33 horas
+                \end{itemize}
+                        \item Etapa 3: Implementação de classes
+                \begin{itemize}
+                                \item Otimista: 10 horas
+                                \item Pessimista: 30 horas
+                                \item Mais provável: 15 horas
+                                \item Tempo Esperado: 16.6 horas
+
+                \end{itemize}
+         \item Etapa 4: Implementação de operações de Banco de Dados
+                        \begin{itemize}
+                                \item Otimista: 6 horas
+                                \item Pessimista: 10 horas
+                                \item Mais provável: 7 horas
+                                \item Tempo esperado: 7,33 horas
+                        \end{itemize}
+                        \item Etapa 5: Implementação de Interface gráfica
+                        \begin{itemize}
+                                \item Otimista: 20 horas
+                                \item Pessimista: 40 horas
+                                \item Mais provável: 30 horas
+                                \item Tempo esperado: 30 horas
+                        \end{itemize}
+                        \item Etapa 6: Realização de testes
+                        \begin{itemize}
+                                \item Otimista: 3 horas
+                                \item Pessimista: 14 horas
+                                \item Mais provável: 5 horas
+                                \item Tempo esperado: 4 horas
+                        \end{itemize}
+                        \item Etapa 7: Correções
+                        \begin{itemize}
+                                \item Otimista: 4 horas
+                                \item Pessimista: 15 horas
+                                \item Mais esperado: 8 horas
+                                \item Tempo esperado: 8,5 horas
+                        \end{itemize}
+        \end{itemize}
+        \section*{Tempo esperado Total}
+        \quad Apresentada a metodologia detalhada bem como a estimativa
+por atividade, a estimativa total será de 71,92 (aprox. 72 horas).
+
+
+        \section*{Justificativa da Metodologia Empregada}
+        \quad Esta metodologia foi empregada na realização da estimativa de tempo de trabalho, pois ela depende  do conhecimento - em sua maioria conceitual - do
+estimador sobre o projeto a ser trabalhado e sobre os membros de sua equipe. Além disso, o tamanho do projeto (complexidade) também é considerada.
+
+\end{document}
