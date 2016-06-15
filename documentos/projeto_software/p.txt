@@ -1,15 +1,15 @@
 Introdução
 
 Este plano objetiva descrever e estimar custos e tempo para a criação do
-sistema CV_Lates [#ref].
+sistema CV_Lates.
 
 O sistema CV_lates objetiva a criação de um gerenciador de currículos
 acadêmicos.
 
 Escopo e propósito do documento
 
-Baseado no documento de requisitos [#ref_req] e no laudo do PBR
-[#Ref_laudo] este projeto deverá estimar o custo e tempo necessários
+Baseado no documento de requisitos e no laudo do PBR
+este documento deverá estimar o custo e tempo necessários
 para a elaboração,c riação criação e implantação do sistema CV_Lates.
 
 Objetivos:

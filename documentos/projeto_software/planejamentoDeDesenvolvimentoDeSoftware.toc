@@ -1,0 +1,51 @@
+\select@language {portuguese}
+\contentsline {section}{\numberline {1}Da Natureza Deste Documento}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {section}{\numberline {2}Descri\c c\~ao de Atividades}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {subsection}{\numberline {2.1}Etapa 1: Diagrama\c c\~ao}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {subsubsection}{\numberline {2.1.1}Diagrama\c c\~ao: Casos de Uso -- A}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {subsubsection}{\numberline {2.1.2}Diagrama\c c\~ao: Diagramas de Classe -- B}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {subsection}{\numberline {2.2}Sequenciamento de atividades: Ordem de atividades do projetista}{2}
+\contentsline {paragraph}{}{2}
+\contentsline {paragraph}{}{3}
+\contentsline {subsection}{\numberline {2.3}Etapa 2: Implementa\c c\~ao}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {subsubsection}{\numberline {2.3.1}Implementa\c c\~ao: Classes -- C}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {subsubsection}{\numberline {2.3.2}Implementa\c c\~ao: Banco de Dados -- D}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {subsubsection}{\numberline {2.3.3}Implementa\c c\~ao: Interface Gr\'afica -- E}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {subsection}{\numberline {2.4}Sequenciamento de Atividades: Ordem de atividades do Programador}{3}
+\contentsline {paragraph}{}{3}
+\contentsline {subsection}{\numberline {2.5}Etapa 3: Realiza\c c\~ao de testes -- F}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {subsubsection}{\numberline {2.5.1}Sequenciamento: Ordem de Atividades at\'e a etapa do \textit {tester}}{4}
+\contentsline {subsection}{\numberline {2.6}Etapa 4: Corre\c c\~oes de \textit {bugs} e outros defeitos -- G}{4}
+\contentsline {paragraph}{}{4}
+\contentsline {subsection}{\numberline {2.7}Sequenciamento: Da ordem de atividades at\'e a etapa de corre\c c\~ao pelo programador}{5}
+\contentsline {subsection}{\numberline {2.8}Etapa 5: Valida\c c\~ao de Corre\c c\~oes -- H}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {section}{\numberline {3}Da Tabela de Atividades}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {paragraph}{}{5}
+\contentsline {section}{\numberline {4}Grafo determin\IeC {\'\i }stico: Sequenciamento estrat\'egico de atividades}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {section}{\numberline {5}Cronograma de atividades}{6}
+\contentsline {paragraph}{}{6}
+\contentsline {subsection}{\numberline {5.1}Justificativas do Cronograma de atividades}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {section}{\numberline {6}Plano de Conten\c c\~ao: Poss\IeC {\'\i }veis problemas do desenvolvimento}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {paragraph}{}{7}
+\contentsline {section}{\numberline {7}Metodologia empregada: Como foi realizado este planejamento de desenvolvimento de software}{7}
+\contentsline {paragraph}{}{7}
