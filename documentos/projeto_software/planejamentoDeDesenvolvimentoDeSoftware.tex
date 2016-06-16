@@ -241,13 +241,13 @@ Apresentação completa das atividades, com descrições resumidas:
         \hline
         C & Implementação das classes & A,B & 16 \\
         \hline
-        D & C & 7,33 \\
+        D & Implementação do banco de dados & C & 7,33 \\
         \hline
-        E & C,D & 30 \\
+        E & Interface gráfica & C,D & 30 \\
         \hline
-        F & C,D,E &  4 \\
+        F & Testes & C,D,E &  4 \\
         \hline
-        G & F & 8.5 \\
+        G & correção de erros& F & 8.5 \\
         \hline
                                         H & Validação do sistema& G & -- \\
 \hline
@@ -260,26 +260,15 @@ total. A seguir o grafo sequencial de tarefas e posteriormente a elaboração do c
 de desenvolvimento (Do início ao término -- todas as etapas)
 
                 \section{Grafo determinístico: Sequenciamento estratégico de atividades}
-                \paragraph{} Aqui está explicitado a versão completa da estrutura que define a sequência de atividades do projeto. Tal não foi definida com o
-critério do custo de menor tempo (utilização do conceito de caminho crítico), mas sim com base no aspecto de desenvolvimento incremental e do uso de \textbf{MVC}
--- \textit{Model,View,Controller}. Assim, o critério de construção da sequencia de atividades pode ser entendido como um grafo que define um caminho de dependências
-do projeto (leva-se em consideração que se tem disponível apenas um programador)
-
-                A seguir, o grafo explicitado (os pesos estão rotulados em seus nós, e não em arestas -- meramente ilustrado para compreensão da sequencia de
-etapas):
-
-                \begin{figure}[!ht]
-                        \centering
-                        \includegraphics[scale=0.7]{004.png}
-                \end{figure}
+                \paragraph{}
+//todo
 
                 \section{Cronograma de atividades}
-                \paragraph{} No cronograma de atividades não será especificado qual horário ou dia o participante do projeto deverá desenvolver. Entretanto,
-como é necessário ter um controle do processo de desenvolvimento para que este siga prazos e venha a fazer parte de um rol de metas é necessário estipular prazos.
-A única obrigação referente a datas é a entrega do trabalho no tempo correto e juntamente entregar as marcações de dias e horas trabalhadas. Isto para verificação
-a respeito das estimativas e da eficiência do planejamento realizado.
-
-                Segue o cronograma:
+                \paragraph{}
+O cronograma será orientado a metas: a meta principal é a entrega da
+parte completa no dia de entrega do projeto, desde que esta não seja
+requisito de ma outra. Faz-se necessário também que o colaborador guarde
+registro do tempo trabalhado.
 
                 \begin{enumerate}
                         \item Desenvolvimento de Casos de Uso: Entrega em 17/06/16
@@ -289,25 +278,39 @@ a respeito das estimativas e da eficiência do planejamento realizado.
                         \item Implementação de Interface Gráfica: 30/06/16
                         \item Realização de testes: Entrega 02/07/16
                         \item Correção de defeitos: Entrega 05/07/16
-                        \item Avaliação do produto e entrega: 06/07/16  
+                        \item Avaliação do produto e entrega: 06/07/16
                 \end{enumerate}
-                
+
                 \subsection{Justificativas do Cronograma de atividades}
-                \paragraph{} Como o processo de desenvolvimento é simplificado quanto as atividades concomitantes, pelo fato de que as atividades possuem dependência 
-entre si e a forma de desenvolvimento é similar às metodologias tradicionais, só há um caminho na rede. Assim, não foi necessário utilizar métodos complexos 
-para calcular qual o melhor caminho a ser tomado na decisão da sequencia de atividades.
-                \paragraph{}Isto define que este caminho único seja o caminho crítico. A respeito das datas, é tido como ponto de partida o dia de hoje (15/06/16), 
-dia em que este documento foi lançado. Assim, a primeira etapa corrente será o desenvolvimento de diagrama de casos de uso. A respeito da quantidade de dias, foi 
-tomado a decisão de dar um tempo extra, considerando possíveis fatores humanos que os desenvolvedores possuem rotinas fora do projeto.  Assim, o planejamento tem 
-um cronograma que totaliza 22 dias. 
+                \paragraph{}
+Uma vez que a metodologia de trabalho adotada se baseia num modelo
+espiral-incremental, não faz-se necessário um sistema complexo para
+compreender o fluxo de trabalho, tendo seu caminho crítico, ou seja, sua
+zona de interdependências em linha reta (atividades sequenciais de A até
+H).
+
+\paragraph{}
+Os prazos passam a contar a partir da disponibilização deste documento.
+
+\paragraph{}
+Há um total de 22 dias para o desenvolvimento. Os períodos de trabalho
+foram elaborados levando em conta fatores humanos - doença,
+indisponibilidade parcial e/ou necessidade de ausência, de descanso ou
+de auxílio em qualquer outra situação, por exemplo.
+
                 \section{Plano de Contenção: Possíveis problemas do desenvolvimento}
-                \paragraph{} Aqui considera-se que fatores humanos podem intervir no plano de desenvolvimento e possivelmente vir a decorrer na falha da execução 
-das previsões de consumo de tempo, bem como, nas entregas nas datas previstas. Desse modo, cabe ao gerente estar ciente da situação dos membros da equipe e assumir 
-a responsabilidade por elementos não concluídos ou falhos ao término do projeto. 
-                \paragraph{} Por causa disso, é necessário salientar que o gerente intervirá em etapas do processo de desenvolvimento quando este analisar a deficiência 
-na execução do plano de projeto.
+                \paragraph{}
+Fatores humanos de diversas e variadas espécies podem influir no
+desenvolvimento do projeto. A ausência de colaboradores, a desistência
+e/ou impossibilidade, por exemplo.
+
+\paragraph{}
+Neste caso, o gerente assumirá as tarefas deste colaborador, escolhendo,
+quando necessário e se cabível, outro para auxiliá-lo.
                 \section{Metodologia empregada: Como foi realizado este planejamento de desenvolvimento de software}
-                \paragraph{}Este planejamento de software foi realizado com base em dois fatores de escolha organizacional: metodologia de desenvolvimento tradicional 
-e padrão arquitetural de software adotado. Tudo será elaborado de forma incremental e modular, sendo que uma etapa anterior sempre será subsídio da próxima 
-etapa (principalmente quanto a implementação) e estas definem as atividades de software.
+                \paragraph{}
+Para a avaliação e designação das atividades, foram levados em conta
+fatores coo, por exemplo, o modelo arquitetural utilizado (MVC), a
+metodologia de desenvolvimento (Espiral incremental) e a disponibilidade
+dos colaboradores.
                 \end{document}
