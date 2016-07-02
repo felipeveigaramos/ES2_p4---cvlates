@@ -1,0 +1,78 @@
+classe usuario {
+ - string nome;
+ - int idUsuario;
+ - string cpf;
+ - string email;
+ - string senha;
+ 
+ - getters();
+ - setters();
+
+}
+
+classe cadastroDeUsuario {
+ - boolean cadastrarUsuario(string nome, string email, string senha);
+ - boolean atualizarUsuario(usuario u);
+ - boolean removeUsuario(usuario u)
+}
+
+classe verificadorDeLogin {
+   // esta classe servirá para validar login de instituição, bem como, o login de usuário
+  - [boolean] validaLogin(string email, string senha);	 	
+
+}
+
+classe instituicaoDeEnsino {
+  - string nome;
+  - int idInstituicao;
+  - string cnpj;
+  - string email;
+  - string senha;
+  
+  - getters();
+  - setters();
+}
+
+classe cadastroDeInstituicaoDeEnsino {
+	
+	- boolean cadastrarInstituicao(string nome, string cnpj, string email, string senha);
+	- boolean atualizaNoCadastro(instituicaoDeEnsino instituicao);
+	- boolean removeNoCadastro(instituicaoDeEnsino instituicao);
+	
+}
+classe documento {
+	- string link;
+	- document documento;
+	- string[] palavra-chave;
+}
+classe cadastroDeDocumentos {
+	
+	- boolean salvaDocumento(usuario u, documento d);
+	- boolean alteraDocumento(documento d);
+	- boolean excluiDocumento(documento d);
+	- documento procuraDocumento(usuario u);
+	- documento procuraDocumento(string palavra-chave);
+	- documento procuraDocumento(String localDeAplicacao);
+	
+}
+classe relatorio {
+	- usuario u;
+	- documento[] d;
+	
+	- getters();
+}
+
+classe geradorDeRelatorio() {
+		
+	- [relatorio] geraRelatorio(usuario u);
+    	
+
+}
+
+
+
+
+
+
+
+
