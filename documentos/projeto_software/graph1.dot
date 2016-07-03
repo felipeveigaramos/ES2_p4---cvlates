@@ -1,0 +1,20 @@
+digraph G {
+
+    inicio [label="inicio",shape=box,style=filled,color=lightgrey,height=0.5];
+    A [label="A",shape=circle,height=0.5];
+    B [label="B",shape=circle,height=0.5];
+    inicio -> A [label=" trajetória inicial"];
+    A -> B [label = "3,16"]
+    C [label="C",shape=circle,height=0.5];
+    D [label="D",shape=circle,height=0.5];
+    E [label="E",shape=circle,height=0.5];
+    B -> C [label = " 2,33"];
+    C -> D [label = " 16"];
+    D -> E [label = " 7,33"];
+    F [label="F",shape=circle,height=0.5];
+    E -> F[label= " 30"];
+    G [label="G",shape=circle,height=0.5];
+    F -> G [label=" 4"];
+    H [label = "FIM -- (H)", shape=box,style=filled,color=lightgrey,height=0.5];
+    G -> H[label= " 8,5"];
+}

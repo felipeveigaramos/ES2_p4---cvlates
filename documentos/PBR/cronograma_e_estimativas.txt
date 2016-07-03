@@ -1,6 +1,0 @@
-Entrega:04/04/2016
-
-Estimativas:
-Projetista:20 horas
-Usuário:6 horas
-Testador:16 horas
