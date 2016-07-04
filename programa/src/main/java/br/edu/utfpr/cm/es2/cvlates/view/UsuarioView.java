@@ -2,6 +2,7 @@ package br.edu.utfpr.cm.es2.cvlates.view;
 
 import java.awt.FlowLayout;
 import java.awt.HeadlessException;
+import java.awt.Rectangle;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -41,14 +42,22 @@ public class UsuarioView extends JFrame {
 
     private void criaPanelPrincipal() {
         this.jPanelPrincipal = new JPanel(new FlowLayout());
-
+jPanelPrincipal.setBounds(new Rectangle(5, 5));
         
         jButtonNovo = new JButton("Novo usuário");
-        jButtonNovo.setEnabled(true);
-        jButtonNovo.setVisible(true);
+        jButtonNovo.setMnemonic('n');
+        
         jPanelPrincipal.add(jButtonNovo);
         
-        setContentPane(jPanelPrincipal);
+        jButtonPesquisar = new JButton("Listar Usuarios");
+        jButtonPesquisar.setMnemonic('p');
+        jPanelPrincipal.add(jButtonPesquisar);
+        
+        jListUsuarios = new JList<Usuario>();
+        
+        jPanelPrincipal.add(jListUsuarios);
+        
+        add(jPanelPrincipal);
     }
 
 }
