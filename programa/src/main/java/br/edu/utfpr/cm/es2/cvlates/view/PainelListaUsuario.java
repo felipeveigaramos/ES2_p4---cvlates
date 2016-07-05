@@ -2,17 +2,24 @@ package br.edu.utfpr.cm.es2.cvlates.view;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import br.edu.utfpr.cm.es2.cvlates.controller.UsuarioController;
+import br.edu.utfpr.cm.es2.cvlates.entity.Usuario;
 
 public class PainelListaUsuario extends javax.swing.JPanel {
 
     /**
      * Creates new form PainelListaUsuario
      */
+	private UsuarioController uController;
     public PainelListaUsuario() {
+    	uController = new UsuarioController();
         initComponents();
     }
 
@@ -30,14 +37,21 @@ public class PainelListaUsuario extends javax.swing.JPanel {
         jTable1 = new javax.swing.JTable();
 
         jLabel1.setText("Lista de Usuário");
-
+        
+        List<Usuario> usuarios = new ArrayList<Usuario>();
+        usuarios = uController.finDall();
+        String[][] resultadoFormatado = new String[usuarios.size()][3];
+        
+        int i = 0;
+       
+        for(Usuario u : usuarios) {
+        	resultadoFormatado[i][0] = u.getNome();
+        	resultadoFormatado[i][1] = u.getCpf();
+        	resultadoFormatado[i][2] = u.getEmail();
+        }
+        
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null},
-                {null, null, null},
-                {null, null, null},
-                {null, null, null}
-            },
+            resultadoFormatado,
             new String [] {
                 "Nome", "cpf", "email"
             }
