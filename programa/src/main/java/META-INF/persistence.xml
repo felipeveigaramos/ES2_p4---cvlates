@@ -5,7 +5,7 @@
 
  <persistence-unit name="cvlates">
    <!-- provedor/implementacao do JPA -->
-   <provider>org.hibernate.ejb.HibernatePersistence</provider>
+   <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
    <class>br.edu.utfpr.cm.es2.cvlates.entity.Usuario</class>
 
    <properties>
